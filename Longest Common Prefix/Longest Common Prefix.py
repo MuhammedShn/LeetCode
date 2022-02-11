@@ -4,12 +4,12 @@ class Solution:
         count_List = len(strs)
         prefix_List = [""] * count_List
         strs.sort()
-        longest = min(strs)
-        longest_strs=len(min(strs))
+        shortest = min(strs)
+        shortest_strs=len(min(strs))
 
 
-        for i in range(0,longest_strs):
-            object = longest[i]
+        for i in range(0,shortest_strs):
+            object = shortest[i]
             count = 0
             for j in range(1,count_List):
                 if object == strs[j][i]:
